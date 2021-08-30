@@ -70,8 +70,9 @@ body {
   font-family: "Lexend Deca", Helvetica, sans-serif;
   padding: 1rem 2.25rem;
   margin-top: 2rem;
-  border: none;
   border-radius: 5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .card.sedans .button {
@@ -84,6 +85,12 @@ body {
 
 .card.luxury .button {
   color: var(--very-dark-cyan);
+}
+
+.card .button:hover {
+  background: transparent;
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
 }
 
 .attribution {
